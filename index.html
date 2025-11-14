@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Determinante de Matriz 3x3</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 40px;
+        }
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+        td {
+            padding: 10px;
+        }
+        input {
+            width: 60px;
+            text-align: center;
+            font-size: 16px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #resultado {
+            margin-top: 20px;
+            font-weight: bold;
+            font-size: 18px;
+            color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculadora de Determinante 3x3</h1>
+    <p>Introduce los valores de la matriz:</p>
+    <form id="matrizForm">
+        <table border="1">
+            <tr>
+                <td><input type="number" id="A11" required></td>
+                <td><input type="number" id="A12" required></td>
+                <td><input type="number" id="A13" required></td>
+            </tr>
+            <tr>
+                <td><input type="number" id="A21" required></td>
+                <td><input type="number" id="A22" required></td>
+                <td><input type="number" id="A23" required></td>
+            </tr>
+            <tr>
+                <td><input type="number" id="A31" required></td>
+                <td><input type="number" id="A32" required></td>
+                <td><input type="number" id="A33" required></td>
+            </tr>
+        </table>
+        <button type="button" onclick="calcularDeterminante()">Calcular Determinante</button>
+    </form>
+    <div id="resultado"></div>
+
+    <script src="Determinantes.js"></script>
+</body>
+</html>
